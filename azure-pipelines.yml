@@ -9,7 +9,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'badb11d9-0570-4239-927c-3ae7a94588f4'
+  azureSubscription: 'conn-hgsugar'
   
   # Web app name
   webAppName: 'hgsugar'
@@ -67,7 +67,7 @@ stages:
         deploy:
           steps:            
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: hgsugar'
+            displayName: 'Azure Web App Deploy: $(webAppName)'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
