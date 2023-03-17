@@ -9,7 +9,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '56804831-6444-42d5-9fa6-a80ef647b4f0'
+  azureSubscription: 'conn-hgsugar'
   
   # Web app name
   webAppName: 'hgsugar'
